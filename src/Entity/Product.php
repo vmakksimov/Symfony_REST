@@ -33,7 +33,7 @@ class Product
     #[ORM\Column(type: 'text')]
     #[ApiProperty(types: ['https://schema.org/name'])]
     #[Assert\NotNull]
-    private string $name;
+    private ?string $name;
 
     /**
      * A description of the item.
